@@ -1,0 +1,36 @@
+.frameContainer {
+    display: flex;  
+    justify-content: space-around; 
+    align-items: stretch; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    align-content: stretch;
+    width: 100%;
+    height: auto;
+    gap: 5px;
+}
+
+.itemframe {
+    position: relative;
+    align-self:auto;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+    width: 48%;
+    height: auto;
+    margin: 5px auto;
+}
+
+iframe {
+    display: block;
+    width: 99%;
+    margin: 5px auto;
+    aspect-ratio: 16 / 9;
+    border: 1px solid transparent;
+}
+
+@media only screen and (max-width: 768px)  {
+    .itemframe {
+        width: 99%;
+    }
+}
