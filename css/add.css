@@ -1,4 +1,6 @@
 @namespace url("http://www.w3.org/1999/xhtml");
+@media (prefers-reduced-motion: no-preference) {
+html { scroll-behavior: smooth; } }
 body { transition: all .2s linear; }
-@media only screen and (max-width: 640px;) {
-.handheldhide {display: none;} }
+@media only screen and (max-width: 640px) {
+.handheldhide { display: none; } }

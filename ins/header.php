@@ -1,5 +1,5 @@
     <header class="site-header">
-        <div class="site-header__top">
+        <div id="top" class="site-header__top">
             <div class="container">
                 <div class="grid-row">
                     <div class="col d-flex">
@@ -7,8 +7,8 @@
                     <div class="col text-right">
                         <nav class="site-header__nav">
                             <ul>
-                                <li><a href="//test.audio-analogue.ru/retailers.html">Где купить</a></li>
-                                <li><a href="//test.audio-analogue.ru/contacts.html">Контакты</a></li>
+                                <li><a href="//audio-analogue.ru/retailers.html" title="Где купить">Где купить</a></li>
+                                <li><a href="//audio-analogue.ru/contacts.html" title="Контакты">Контакты</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -19,7 +19,7 @@
             <div class="container">
                 <div class="grid-row">
                     <div class="col">
-                        <a href="//test.audio-analogue.ru/index.html" class="site-header__logo">
+                        <a href="//audio-analogue.ru/index.html" class="site-header__logo">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1885 153">
                                 <path d="M87.42,88.91H43.17l-9.33,27.51c-4.54,13.39-6.93,23.67,7.42,23.92v4.07H5.86v-4.07c12.92-1.92,16.02-8.85,20.33-21.52L63.98,5.92H78.1l39.7,117.92c4.07,12.67,7.42,16.5,19.61,16.5v4.07H89.09v-4.07c9.33,0,13.87-4.07,10.77-13.39L87.42,88.91z M65.42,22.42h-0.48L45.81,80.54h38.51L65.42,22.42z"
                                 />
@@ -50,7 +50,7 @@
                     </div>
                     <div class="col text-center">
                         <div class="site-header__airtech">
-                            <img src="//test.audio-analogue.ru/images/logo-airtech.jpg" alt="AirTech">
+                            <img src="//audio-analogue.ru/images/logo-airtech.jpg" alt="AirTech">
                         </div>
                     </div>
                     <div class="col text-right">

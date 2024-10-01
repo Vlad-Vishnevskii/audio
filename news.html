@@ -6,7 +6,7 @@
 
         <link href="//audio-analogue.ru/news.html" rel="canonical">
 
-        <script type="text/javascript">
+        <script>
             var siteUrl = 'https://www.audioanalogue.com/en/';
             var assetsUrl = 'https://www.audioanalogue.com/';
             var siteLanguage = 'en';
@@ -17,29 +17,39 @@
         <title>Новости | Audio Analogue & Airtech</title>
 
         <style>
-            .newsblock {
-                display: flex;
-                justify-content: space-around;
-                width: 99%;
-            }           
-            .newsbox {
-                width: 33%;
-                padding: 5px;
-            }
-            iframe {
-                display: block;
-                margin: 5px auto;
-                aspect-ratio: 16/9;
-            }            
-            @media screen and (max-width: 750px) {
-                .newsblock {
-                    flex-wrap: wrap;
-                    align-items: center;
-                }
-                .newsbox {
-                    width: 75%;
-                }
-            }
+.frameflexbox 
+  {
+    display: flex;  
+    justify-content: space-around; 
+    align-items: stretch; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    align-content: stretch;
+    width: 100%;
+    height: auto;
+    gap: 5px;
+  }
+.itemframe 
+  {
+    position: relative;
+    align-self:auto;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+    width: 48%;
+    height: auto;
+    margin: 5px auto;
+  }
+iframe 
+  {
+    display: block;
+    width: 99%;
+    margin: 5px auto;
+    aspect-ratio: 16 / 9;
+    border: 1px solid transparent;
+  }
+@media only screen and (max-width: 768px)   
+  { .itemframe {width: 99%;} }
         </style>
 
 </head>
@@ -113,7 +123,7 @@
     </div>
 
     <?php include "ins/header.php"; ?>
-        <?php include "ins/navmenu.php"; ?>
+    <?php include "ins/navmenu.php"; ?>
 
             <main data-router-wrapper>
                 <article data-router-view="main">
@@ -148,62 +158,70 @@
                                 </div>
                             </div>
 
-
                             <div class="section news-list-wrapper pt-0">
                                 <div class="container">
 
-                                    <div class="newsblock">
+                                    <div class="frameflexbox">
 
-                                        <div class="newsbox">
-<iframe loading="lazy" width="96%" frameborder="0" scrolling="no" allowfullscreen
-allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media"   
-src="https://dzen.ru/embed/vRe5lYiJkO3k?from_block=partner&from=zen&mute=0&autoplay=0&tv=0"></iframe>                                        
-                                        </div>
-                                        <div class="newsbox">
-<iframe loading="lazy" width="96%" frameborder="0" scrolling="no" allowfullscreen 
-allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media"  
-src="https://dzen.ru/embed/vcZTzETsxCRA?from_block=partner&from=zen&mute=0&autoplay=0&tv=0"></iframe>                                        
-                                        </div>
-                                        <div class="newsbox">
-<iframe loading="lazy" width="96%" frameborder="0" scrolling="no" allowfullscreen 
-allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media"  
+                                        <div class="itemframe">
+<iframe allowfullscreen style="object-fit: contain;" 
+allow="fullscreen; gyroscope; encrypted-media"   
 src="https://dzen.ru/embed/vB1HJNCvy_TE?from_block=partner&from=zen&mute=0&autoplay=0&tv=0"></iframe>                                        
                                         </div>
-
-                                    </div>
-
-                                    <div class="newsblock">
-
-                                        <div class="newsbox">
-<!-- Reserved -->                                        
-<iframe loading="lazy" width="96%" frameborder="0" scrolling="no" allowfullscreen
-allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media"   
-src=" "></iframe>                                        
-<!-- Reserved -->                                        
+                                        
+                                        <div class="itemframe">
+<iframe allowfullscreen style="object-fit: contain;" 
+allow="fullscreen; gyroscope; encrypted-media"  
+src="https://dzen.ru/embed/vcZTzETsxCRA?from_block=partner&from=zen&mute=0&autoplay=0&tv=0"></iframe>                                        
                                         </div>
-                                        <div class="newsbox">
-<iframe loading="lazy" width="96%" frameborder="0" scrolling="no" allowfullscreen 
-allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media"  
-src="https://dzen.ru/embed/vYrRXpjy11S8?from_block=partner&from=zen&mute=0&autoplay=0&tv=0"></iframe>                                        
-                                        </div>
-                                        <div class="newsbox">
-<!-- Reserved -->                                        
-<iframe loading="lazy" width="96%" frameborder="0" scrolling="no" allowfullscreen 
-allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media"  
-src=" "></iframe>
-<!-- Reserved -->                                        
+                                        
+                                        <div class="itemframe">
+<iframe allowfullscreen style="object-fit: contain;" 
+allow="fullscreen; gyroscope; encrypted-media"   
+src="https://dzen.ru/embed/vRe5lYiJkO3k?from_block=partner&from=zen&mute=0&autoplay=0&tv=0"></iframe>                                        
                                         </div>
 
-                                    </div>                                   
-
+                                        <div class="itemframe">
+<iframe allowfullscreen style="object-fit: contain;" 
+allow="fullscreen; gyroscope; encrypted-media" 
+src="https://dzen.ru/embed/vWyaqypy7U0Q?from_block=partner&from=zen&mute=0&autoplay=0&tv=0"></iframe>                                        
+                                        </div>
+                                        
+                                        <div class="itemframe">
+<iframe allowfullscreen style="object-fit: contain;" 
+allow="fullscreen; gyroscope; encrypted-media"
+src="https://vk.com/video_ext.php?oid=-28887913&id=456240276&hd=2&autoplay=0"></iframe>
+                                        </div>
+                                        
+                                        <div class="itemframe">                                        
+<iframe allowfullscreen style="object-fit: contain;" 
+allow="fullscreen; gyroscope; encrypted-media" 
+src="https://vk.com/video_ext.php?oid=-227074228&id=456239019&hd=2"></iframe>                                        
+                                        </div>
+                                        
+                                        <div class="itemframe">                                        
+<iframe allowfullscreen style="object-fit: contain;" loading="lazy"
+allow="fullscreen; gyroscope; encrypted-media" 
+src="https://vk.com/video_ext.php?oid=-227074228&id=456239018&hd=2"></iframe>
+                                        </div>
+                                        
+                                        <div class="itemframe">
+<iframe allowfullscreen style="object-fit: contain;" loading="lazy" 
+allow="fullscreen; gyroscope; encrypted-media" 
+src="https://vk.com/video_ext.php?oid=-227074228&id=456239017&hd=2"></iframe>
+                                        </div>
+                                        
+                                    </div>                                  
+                                    
                                 </div>
                             </div>
 
-                            <?php include "ins/footer.php"; ?>
+                <?php include "ins/footer.php"; ?>
                         </div>
                     </div>
                 </article>
             </main>
-            <script type="text/javascript" src="js/audioanalogue.js"></script>
+    <script src="js/audioanalogue.js"></script>
+  <?php include "ins/yam.php"; ?>
 </body>
 </html>

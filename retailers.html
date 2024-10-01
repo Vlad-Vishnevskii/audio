@@ -4,20 +4,19 @@
 <head>
 <?php include "ins/meta.php"; ?>
 
-    <link href="retailers.html" rel="canonical">
-
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU" type="text/javascript"></script>
-
-    <script type="text/javascript">
+    <link href="//audio-analogue.ru/retailers.html" rel="canonical">
+    <script crossorigin src="https://cdn.jsdelivr.net/npm/@babel/standalone@7/babel.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=3f26b556-b203-412e-aba8-23955b6433f7&lang=ru-RU"></script>
+    <script>
         var siteUrl = 'https://www.audioanalogue.com/en/';
         var assetsUrl = 'https://www.audioanalogue.com/';
         var siteLanguage = 'en';
         var scrollAnim1Images = [];
         var scrollAnim2Images = [];
-    </script>
-
+    </script>   
+   
     <title>Где купить | Audio Analogue & Airtech</title>
-
+    
 </head>
 
 <body class="">
@@ -114,11 +113,11 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col">
-                            <div id="map" style="width: 90%; height: 75vh; padding: 0; margin: 0 auto;min-height: 560px"></div>
-                        </div>
-                    </div>
+          <div class="sales-map" style="position: relative; overflow: hidden;">
+          <div style="display: block; width: 99%; object-fit: contain; margin: auto;">
+<div id="map" style="min-width: 300px; min-height: 400px;"></div>
+          </div>
+          </div>
                        
 <?php include "ins/footer.php"; ?>
 </div>
@@ -126,7 +125,6 @@
 </article>      
 </main>
 
-<script type="text/javascript" src="js/audioanalogue.js"></script>
 <script>
   ymaps.ready(init);
 
@@ -937,7 +935,8 @@
       objectManager.add(points);
   }
 </script>
+<script src="js/audioanalogue.js"></script>
 
-<script type="application/ld+json">{"@context":"http://schema.org","@graph":[{"@type":"WebPage","author":{"@id":"https://www.audioanalogue.com#identity"},"copyrightHolder":{"@id":"https://www.audioanalogue.com#identity"},"copyrightYear":"2023","creator":{"@id":"https://www.audioanalogue.com#creator"},"dateCreated":"2023-09-19T07:17:55+02:00","dateModified":"2024-07-17T20:11:16+02:00","datePublished":"2023-09-19T07:17:00+02:00","headline":"Rivenditori - Pagina","inLanguage":"en","mainEntityOfPage":"https://www.audioanalogue.com/en/retailers","name":"Rivenditori - Pagina","publisher":{"@id":"https://www.audioanalogue.com#creator"},"url":"https://www.audioanalogue.com/en/retailers"},{"@id":"https://www.audioanalogue.com#identity","@type":"LocalBusiness","name":"Audio Analogue","priceRange":"$","url":"https://www.audioanalogue.com"},{"@id":"#creator","@type":"Organization"},{"@type":"BreadcrumbList","description":"Breadcrumbs list","itemListElement":[{"@type":"ListItem","item":"https://www.audioanalogue.com/en","name":"Homepage","position":1},{"@type":"ListItem","item":"https://www.audioanalogue.com/en/retailers","name":"Rivenditori - Pagina","position":2}],"name":"Breadcrumbs"}]}</script>
+<?php include "ins/yam.php"; ?>
 </body>
 </html>
