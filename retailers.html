@@ -933,16 +933,17 @@
           }, ]
       }
       objectManager.add(points);
+
+      window.addEventListener("load", function (event) {
+        if (myMap) {
+            myMap.container.fitToViewport();
+        }
+    });
   }
 </script>
 <script src="js/audioanalogue.js"></script>
 <script>
-    window.addEventListener("load", function (event) {
-        console.log("All resources finished loading!");
-        if (ymaps) {
-            ymaps.container.fitToViewport();
-        }
-    });
+   
 </script>
 
 <?php include "ins/yam.php"; ?>
