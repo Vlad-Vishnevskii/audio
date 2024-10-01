@@ -126,6 +126,9 @@
 </main>
 
 <script>
+  if (!ymaps) {
+    window.location.reload()
+  }
   ymaps.ready(init);
 
   function init() {
